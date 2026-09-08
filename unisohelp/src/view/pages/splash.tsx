@@ -1,6 +1,6 @@
 import { View, ImageBackground  } from 'react-native';
 
-import styleUnisoHelp from './css/style'
+import styleUnisoHelp from '../components/style'
 
 const splashScreen =()=> {
   return (

@@ -76,6 +76,10 @@ const styleUnisoHelp = StyleSheet.create({
     alignItems: "end",
     
   },
+  button: {
+    flex: 1,
+    alignItems: "center",
+  },
   //index
   indexHeader: {
     height: height * 0.2,
