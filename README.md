@@ -1,1 +1,2 @@
-# unisoHelp
+<h1>UNISO Help</h1>
+<p>O principal objetivo do Uniso Help é desenvolver uma plataforma digital centralizada que ofereça suporte acadêmico aos novos alunos da Universidade de Sorocaba, facilitando o acesso a informações e serviços institucionais por meio de um atendimento rápido e digital. Além disso, o projeto busca proporcionar praticidade através do acesso ágil a links institucionais e promover um ambiente colaborativo para o esclarecimento de dúvidas acadêmicas e administrativas.</p>
