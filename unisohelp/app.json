@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "unisohelp",
+    "name": "UNISO Help",
     "slug": "snack-f1a77439-2757-4964-b7b8-83598a9a01d9",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/img/unisoIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/img/unisoIcon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,13 +17,13 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/img/unisoIcon.png",
+        "backgroundImage": "./assets/img/unisoIcon.png",
+        "monochromeImage": "./assets/img/unisoIcon.png"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/img/unisoIcon.png"
     }
   }
 }

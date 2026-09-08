@@ -1,18 +1,25 @@
 import * as React from 'react';
-import { View, Text, Image, TextInput, Pressable } from 'react-native';
+import { View, Text, Image, TextInput, Pressable, ScrollView } from 'react-native';
 import { RadioButton } from 'react-native-paper';
+import { useNavigation } from '@react-navigation/native';
 
-import styleUnisoHelp from './css/style';
+import styleUnisoHelp from '../components/style';
+
+
 
 const LoginScreen =()=> {
-  
+
+  const navigation = useNavigation();
+
   const [rememberPress, setRemember] = React.useState("unchecked");
   const [btnPress, setBtn] = React.useState("unpressed");
+  const [ra, setRa] = React.useState("");
+  const [password, setPassword] = React.useState("");
 
   return (
-    <View style={styleUnisoHelp.bg}>
+    <ScrollView style={styleUnisoHelp.bg}>
       <View style={styleUnisoHelp.loginHeader}>
-        <Image style={styleUnisoHelp.icon} source={require('./img/unisoIcon.png')} />
+        <Image style={styleUnisoHelp.icon} source={require('../../../assets/img/unisoIcon.png')} />
         <View style={styleUnisoHelp.titleAndSubtitleView}>
           <Text style={styleUnisoHelp.titleHeader}>UNISO Help</Text>
           <Text style={styleUnisoHelp.subtitleHeader}>Universidade de Sorocaba</Text>
@@ -24,8 +31,8 @@ const LoginScreen =()=> {
             <Text style={styleUnisoHelp.titleCard}>Login</Text>
           </View>
           <View style={styleUnisoHelp.contentCard}>
-            <TextInput style={styleUnisoHelp.input} placeholder="RA"/>
-            <TextInput style={styleUnisoHelp.input} placeholder="Senha" secureTextEntry={true}/>
+            <TextInput style={styleUnisoHelp.input} placeholder="RA" onChangeText={(text) => {setRa(text)}}/>
+            <TextInput style={styleUnisoHelp.input} placeholder="Senha" secureTextEntry={true} onChangeText={(text) => {setPassword(text)}}/>
           </View>
           <View style={styleUnisoHelp.footerCard}>
             <View style={styleUnisoHelp.options}>
@@ -47,7 +54,7 @@ const LoginScreen =()=> {
             <View style={styleUnisoHelp.button}>
               <Pressable 
                 style={styleUnisoHelp.buttonCard} 
-                onPress={() => {setBtn("pressed")}}         
+                onPress={() => {navigation.navigate("index")}}         
               >
                 <Text style={styleUnisoHelp.textButtonCard}>Entrar</Text>
               </Pressable>
@@ -55,7 +62,7 @@ const LoginScreen =()=> {
           </View>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
