@@ -24,6 +24,9 @@
     },
     "web": {
       "favicon": "./assets/img/unisoIcon.png"
-    }
+    },
+    "plugins": [
+      "expo-status-bar"
+    ]
   }
 }

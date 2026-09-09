@@ -42,7 +42,7 @@ const styleUnisoHelp = StyleSheet.create({
   },
   loginContent: {
     width: width * 0.9,
-    height: height * 0.4,
+    height: height * 0.43,
     backgroundColor: "#ffff",
     marginTop: height * 0.1,
     marginBottom: height * 0.25,
@@ -50,35 +50,43 @@ const styleUnisoHelp = StyleSheet.create({
     padding: 20,
   },
   headerCard: {
-
+    flex: 1,
   },
   contentCard: {
-    flex:1,
+    flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    height: height * 1,
   },
   footerCard: {
-    
+    flex: 1,
   },
   options: {
     flex: 1,
     flexDirection: "row",
-    padding: 15,
+    padding: 1,
 
   },
   remember: {
     flex: 1,
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "flex-start",
+    alignItems: "center",
   },
   questions: {
     flex: 1,
-    alignItems: "end",
+    alignItems: "flex-end",
+    justifyContent: "center",
     
   },
   button: {
     flex: 1,
     alignItems: "center",
+  },
+  modal: {
+    width: width * 0.1,
+    height: height * 0.1,
+    backgroundColor: "#000",
   },
   //index
   indexHeader: {
@@ -113,9 +121,10 @@ const styleUnisoHelp = StyleSheet.create({
 
   //login
   icon: {
-    width: 80,
-    height: 80,
+    width: 60,
+    height:60,
     padding: 0,
+    marginRight: 10,
   },
   titleHeader: {
     color: "#1E3ABA",
@@ -177,7 +186,7 @@ const styleUnisoHelp = StyleSheet.create({
   },
   buttonIndex: {
       width: width * 0.9,
-      height: height * 0.2,
+      height: height * 0.1,
       backgroundColor: "#fff",
       borderWidth: 2,
       borderRadius: 27,

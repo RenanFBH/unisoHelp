@@ -11,7 +11,9 @@ const IndexScreen =()=> {
           <Text style={styleUnisoHelp.welcomeHeader}>Bem vindo(a) Aluno!</Text>
           <Text style={styleUnisoHelp.raHeader}>RA 000000</Text>
         </View>
-        <Image style={styleUnisoHelp.icon} source={require('../../../assets/img/unisoIcon.png')} />
+        <Pressable>
+          <Image style={styleUnisoHelp.icon} source={require('../../../assets/img/unisoIcon.png')} />
+        </Pressable>
       </View>
       <View style={styleUnisoHelp.content}>
         <View style={styleUnisoHelp.buttonGroupIndex}>
@@ -24,6 +26,6 @@ const IndexScreen =()=> {
       </View>
     </ScrollView>
   )
-}
+};
 
 export default IndexScreen;
