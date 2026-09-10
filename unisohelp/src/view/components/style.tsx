@@ -42,7 +42,7 @@ const styleUnisoHelp = StyleSheet.create({
   },
   loginContent: {
     width: width * 0.9,
-    height: height * 0.4,
+    height: height * 0.43,
     backgroundColor: "#ffff",
     marginTop: height * 0.1,
     marginBottom: height * 0.25,
@@ -50,32 +50,51 @@ const styleUnisoHelp = StyleSheet.create({
     padding: 20,
   },
   headerCard: {
-
+    flex: 1,
   },
   contentCard: {
-    flex:1,
+    flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    height: height * 1,
   },
   footerCard: {
-    
+    flex: 1,
   },
   options: {
     flex: 1,
     flexDirection: "row",
-    padding: 15,
+    padding: 1,
 
   },
   remember: {
     flex: 1,
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "flex-start",
+    alignItems: "center",
   },
   questions: {
     flex: 1,
-    alignItems: "end",
+    alignItems: "flex-end",
+    justifyContent: "center",
     
   },
+  button: {
+    flex: 1,
+    alignItems: "center",
+  },
+  modal: {
+    width: width * 0.1,
+    height: height * 0.1,
+    backgroundColor: "#000",
+  },
+
+  //guide
+  titleAndSubtitleViewPages: {
+    flex:1,
+    alignItems: "center",
+  },
+
   //index
   indexHeader: {
     height: height * 0.2,
@@ -94,7 +113,7 @@ const styleUnisoHelp = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    padding: 40,
+    paddingTop: 20,
   },
 
 
@@ -109,9 +128,10 @@ const styleUnisoHelp = StyleSheet.create({
 
   //login
   icon: {
-    width: 80,
-    height: 80,
+    width: 60,
+    height:60,
     padding: 0,
+    marginRight: 10,
   },
   titleHeader: {
     color: "#1E3ABA",
@@ -160,8 +180,9 @@ const styleUnisoHelp = StyleSheet.create({
     color: "#1E3ABA",
     fontSize: 17,
   },
+
   //index
-  welcomeHeader: {
+  welcomeHeaderIndex: {
     color: "#1E3ABA",
     fontSize: 20,
     fontWeight: 700,
@@ -172,18 +193,37 @@ const styleUnisoHelp = StyleSheet.create({
     fontWeight: 400,
   },
   buttonIndex: {
-      width: width * 0.9,
-      height: height * 0.2,
+      minHeight:  height * 0.11,
+      minWidth: width * 0.9,
       backgroundColor: "#fff",
-      borderWidth: 2,
+      borderWidth: 1,
       borderRadius: 27,
       borderColor: "#1E3ABA",
       flex: 1,
+      flexDirection: "row",
       alignItems: "center",
       justifyContent: "center",
-      
   },
-  
+  textButton: {
+    color: "#1E3ABA",
+    fontSize: 20,
+  },
+  iconButton: {  
+    color: "#1E3ABA",
+    marginRight: width * 0.5,
+    position: "absolute",
+  },
+
+  //Guide
+  welcomeHeaderPages: {
+    color: "#1E3ABA",
+    fontSize: 20,
+    fontWeight: 700,
+  },
+  backButton: {
+    position: "absolute",
+    marginEnd: width * 0.7,
+  },
 
 });
 
