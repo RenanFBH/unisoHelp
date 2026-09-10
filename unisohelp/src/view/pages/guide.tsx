@@ -9,7 +9,7 @@ import styleUnisoHelp from '../components/style';
 
 type NavigationProp = StackNavigationProp<RootStackParamList, "guide">
 
-const guideScreen =()=> {
+const GuideScreen =()=> {
 
     const navigation = useNavigation<NavigationProp>();
 
@@ -25,10 +25,8 @@ const guideScreen =()=> {
                     <Text style={styleUnisoHelp.welcomeHeaderPages}>Guia do aluno</Text>
                 </View>
             </View>
-
-
         </ScrollView>
     )
 };
 
-export default guideScreen;
+export default GuideScreen;

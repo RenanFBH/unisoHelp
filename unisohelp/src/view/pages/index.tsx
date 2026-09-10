@@ -17,16 +17,16 @@ const IndexScreen = () => {
     navigation.navigate("guide");
   };
   const btnService =()=> {
-    navigation.navigate("guide");
+    navigation.navigate("service");
   };
   const btnForum =()=> {
-    navigation.navigate("guide");
+    navigation.navigate("forum");
   };
   const btnFaculty =()=> {
-    navigation.navigate("guide");
+    navigation.navigate("faculty");
   };
   const btnCalendars =()=> {
-    navigation.navigate("guide");
+    navigation.navigate("calendars");
   };
   const btnSettings =()=> {
     navigation.navigate("settings");
