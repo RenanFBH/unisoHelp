@@ -2,14 +2,17 @@ import * as React from 'react';
 import { View, Text, Image, TextInput, Pressable, KeyboardAvoidingView, Alert, Platform, ScrollView } from 'react-native';
 import { RadioButton } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RootStackParamList } from '../../../routes';
 import LoginViewModel from '../../viewmodel/login/loginViewModel';
 
 import styleUnisoHelp from '../components/style';
 
+type NavigationProp = StackNavigationProp<RootStackParamList, 'login'>;
 
 const LoginScreen =()=> {
 
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp>();
 
   const [remember, setRemember] = React.useState("unchecked");
   const [btnPress, setBtn] = React.useState("unpressed");
@@ -22,13 +25,14 @@ const LoginScreen =()=> {
       password,
       remember
     }
-    let response = LoginViewModel(data, navigation);
+    let response = LoginViewModel(data);
     if (!response) {
       Alert.alert(
         "Erro!",
         "RA ou senha inválidos!"
       );
     } 
+    navigation.navigate("index");
   };
 
   return (

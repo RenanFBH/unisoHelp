@@ -88,6 +88,13 @@ const styleUnisoHelp = StyleSheet.create({
     height: height * 0.1,
     backgroundColor: "#000",
   },
+
+  //guide
+  titleAndSubtitleViewPages: {
+    flex:1,
+    alignItems: "center",
+  },
+
   //index
   indexHeader: {
     height: height * 0.2,
@@ -106,7 +113,7 @@ const styleUnisoHelp = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    padding: 40,
+    paddingTop: 20,
   },
 
 
@@ -173,8 +180,9 @@ const styleUnisoHelp = StyleSheet.create({
     color: "#1E3ABA",
     fontSize: 17,
   },
+
   //index
-  welcomeHeader: {
+  welcomeHeaderIndex: {
     color: "#1E3ABA",
     fontSize: 20,
     fontWeight: 700,
@@ -185,18 +193,37 @@ const styleUnisoHelp = StyleSheet.create({
     fontWeight: 400,
   },
   buttonIndex: {
-      width: width * 0.9,
-      height: height * 0.1,
+      minHeight:  height * 0.11,
+      minWidth: width * 0.9,
       backgroundColor: "#fff",
-      borderWidth: 2,
+      borderWidth: 1,
       borderRadius: 27,
       borderColor: "#1E3ABA",
       flex: 1,
+      flexDirection: "row",
       alignItems: "center",
       justifyContent: "center",
-      
   },
-  
+  textButton: {
+    color: "#1E3ABA",
+    fontSize: 20,
+  },
+  iconButton: {  
+    color: "#1E3ABA",
+    marginRight: width * 0.5,
+    position: "absolute",
+  },
+
+  //Guide
+  welcomeHeaderPages: {
+    color: "#1E3ABA",
+    fontSize: 20,
+    fontWeight: 700,
+  },
+  backButton: {
+    position: "absolute",
+    marginEnd: width * 0.7,
+  },
 
 });
 
