@@ -1,11 +1,16 @@
-import UserModel from '../../model/userModel'
+import AlunoModel from '../../model/alunoModel';
+import AlunoRepository from '../../data/repositories/alunoRepository';
 
-const LoginViewModel =(data: UserModel)=> {
+const LoginViewModel = async (data: AlunoModel)=> {
 
-    if (data.ra !== "000006" && data.password !== "19112026") {
-        return false;
-    } 
-    return true;
+    let response = AlunoRepository.findAluno(data.ra);
+    console.log(response);
+
+
+    //if (data.password !== "19112026") {
+        //return false;
+    //} 
+    //return true;
 
 }
 

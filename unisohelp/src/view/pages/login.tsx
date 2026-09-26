@@ -21,7 +21,7 @@ const LoginScreen =()=> {
 
   const handleSignIn =()=> {
     const data = {
-      ra,
+      ra: Number(ra),
       password,
       remember
     }

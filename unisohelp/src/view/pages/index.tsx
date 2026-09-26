@@ -19,9 +19,6 @@ const IndexScreen = () => {
   const btnService =()=> {
     navigation.navigate("service");
   };
-  const btnForum =()=> {
-    navigation.navigate("forum");
-  };
   const btnFaculty =()=> {
     navigation.navigate("faculty");
   };
@@ -53,12 +50,6 @@ const IndexScreen = () => {
           <Pressable style={styleUnisoHelp.buttonIndex} onPress={() => {btnService()}}>
             <FontAwesomeIcon icon={faPhoneVolume} size={30} style={styleUnisoHelp.iconButton} />
             <Text style={styleUnisoHelp.textButton}>Atendimento</Text>
-          </Pressable>
-        </View>
-        <View style={styleUnisoHelp.buttonGroupIndex}>
-          <Pressable style={styleUnisoHelp.buttonIndex} onPress={() => {btnForum()}}>
-            <FontAwesomeIcon icon={faComments} size={30} style={styleUnisoHelp.iconButton} />
-            <Text style={styleUnisoHelp.textButton}>Fórum</Text>
           </Pressable>
         </View>
         <View style={styleUnisoHelp.buttonGroupIndex}>

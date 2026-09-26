@@ -1,33 +1,40 @@
 {
-  "expo": {
-    "name": "UNISO Help",
-    "slug": "snack-f1a77439-2757-4964-b7b8-83598a9a01d9",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/img/unisoIcon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/img/unisoIcon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/img/unisoIcon.png",
-        "backgroundImage": "./assets/img/unisoIcon.png",
-        "monochromeImage": "./assets/img/unisoIcon.png"
-      }
-    },
-    "web": {
-      "favicon": "./assets/img/unisoIcon.png"
-    },
-    "plugins": [
-      "expo-status-bar",
-      "expo-secure-store"
-    ]
-  }
+    "expo": {
+        "name": "UNISO Help",
+        "slug": "snack-f1a77439-2757-4964-b7b8-83598a9a01d9",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/img/squareSynapps.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./assets/img/squareSynapps.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#e6f6ff"
+        },
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "adaptiveIcon": {
+                "backgroundColor": "#E6F4FE",
+                "foregroundImage": "./assets/img/squareSynapps.png",
+                "backgroundImage": "./assets/img/squareSynapps.png",
+                "monochromeImage": "./assets/img/squareSynapps.png"
+            }
+        },
+        "web": {
+            "favicon": "./assets/img/squareSynapps.png",
+            "bundler": "metro"
+        },
+        "plugins": [
+            "expo-status-bar",
+            "expo-secure-store",
+            [
+                "expo-sqlite",
+                {
+                    "enableFTS": true
+                }
+            ]
+        ]
+    }
 }

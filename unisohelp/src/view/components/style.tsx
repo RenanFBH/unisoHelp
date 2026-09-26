@@ -17,6 +17,11 @@ const styleUnisoHelp = StyleSheet.create({
   },
   
   //splashScreen
+  bgSplash: {
+    width: width * 1,
+    height: height * 1,
+    backgroundColor:"#e6f6ff",
+  },
   splashContent: {
     flex: 1,
     alignItems: "center",
@@ -122,8 +127,8 @@ const styleUnisoHelp = StyleSheet.create({
 
   //splashScreen
   logo: {
-    width: 500,
-    height: 100,
+    width: 400,
+    height: 400,
   },
 
   //login

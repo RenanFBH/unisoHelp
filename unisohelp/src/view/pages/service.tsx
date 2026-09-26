@@ -7,7 +7,7 @@ import { RootStackParamList } from '../../../routes';
 
 import styleUnisoHelp from '../components/style';
 
-type NavigationProp = StackNavigationProp<RootStackParamList, "guide">
+type NavigationProp = StackNavigationProp<RootStackParamList, "service">
 
 const ServiceScreen =()=> {
 
