@@ -1,6 +1,6 @@
 import { ScrollView,  View, Text, Image, Pressable } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faRightToBracket, faPhoneVolume, faComments, faUsers, faCalendar, faGear  } from '@fortawesome/free-solid-svg-icons';
+import { faRightToBracket, faPhoneVolume, faUsers, faCalendar, faGear  } from '@fortawesome/free-solid-svg-icons';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../../../routes';

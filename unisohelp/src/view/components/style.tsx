@@ -120,6 +120,8 @@ const styleUnisoHelp = StyleSheet.create({
     justifyContent: "center",
     paddingTop: 20,
   },
+  //settings
+
 
 
   //estilos de objetos
@@ -228,6 +230,25 @@ const styleUnisoHelp = StyleSheet.create({
   backButton: {
     position: "absolute",
     marginEnd: width * 0.7,
+  },
+
+  //settings
+  buttonSettings: {
+    minHeight:  height * 0.08,
+    minWidth: width * 0.9,
+    backgroundColor: "#fff",
+    borderWidth: 1,
+    borderRadius: 27,
+    borderColor: "#1E3ABA",
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  arrowButton: {
+    color: "#1E3ABA",
+    position: 'absolute',
+    marginLeft: width * 0.5,
   },
 
 });

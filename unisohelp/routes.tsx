@@ -18,6 +18,8 @@ export type RootStackParamList  = {
   faculty: undefined;
   calendars: undefined;
   settings: undefined;
+  accessibility: undefined;
+  profile: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList >();
